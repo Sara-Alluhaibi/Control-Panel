@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<body>
+
+
+<form method="POST" action="connection.php">
+
+</form>
+
+<style>
+body {
+background-color:#ffe6e6;
+text-align: center; 
+}
+.slider{
+-webkit-appearance: none;
+width:50%;
+height:10px;
+border-radius:5px;
+background:rgb(226,217,217);
+outline:none;
+
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appwarance: none;
+width:25px;
+height:25px;
+border-radius:15px;
+background:rgb(58,25,207);
+cursor:pointer;
+}
+
+</style>
+
+
+
+<div class="slidecontainer">
+<p>motorl1 </p>
+<p>Value1: <span id="demo1"></span> </p>
+  <input type="range" min="1" max="100" value="50" class="slider1" id="myRange1">
+
+
+
+<p>motorl2 </p>
+ <p>Value2: <span id="demo2"></span> </p>
+
+
+  <input type="range" min="1" max="100" value="50" class="slider2" id="myRange2">
+  
+
+<p>motorl3 </p>
+ <p>Value3: <span id="demo3"></span> </p>
+  <input type="range" min="1" max="100" value="50" class="slider3" id="myRange3">
+ 
+  
+<p>motorl4 </p>
+<p>Value4: <span id="demo4"></span> </p>
+  <input type="range" min="1" max="100" value="50" class="slider4" id="myRange4">
+  
+  
+ <p>motorl5 </p>
+ <p>Value5: <span id="demo5"></span> </p>
+  <input type="range" min="1" max="100" value="50" class="slider5" id="myRange5">
+  
+</div>
+<script>
+    
+    slider1 = document.getElementById("myRange1");
+        output = document.getElementById("demo1");
+        output.innerHTML = slider.value;
+       
+        slider.oninput = function() {
+            output.innerHTML =this.Value;
+        }
+        
+    </script>
+<script>
+    
+   var slider1 = document.getElementById("myRange1");
+    var output1 = document.getElementById("demo1");
+    output1.innerHTML = slider1.nodeValue;
+    
+       slider1.oninput = function(){
+        output1.innerHTML =this.value;
+        
+    } 
+    
+    
+    
+   
+    </script>
+<script>
+    
+   var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("demo2");
+    output1.innerHTML = slider1.nodeValue;
+    
+       slider2.oninput = function(){
+        output2.innerHTML =this.value;
+        
+    } 
+    
+    </script>
+	
+<script>
+    
+   var slider3 = document.getElementById("myRange3");
+    var output3 = document.getElementById("demo3");
+    output1.innerHTML = slider1.nodeValue;
+    
+       slider3.oninput = function(){
+        output3.innerHTML =this.value;
+        
+    } 
+    
+    </script>
+	<script>
+    
+   var slider4 = document.getElementById("myRange4");
+    var output4 = document.getElementById("demo4");
+    output1.innerHTML = slider1.nodeValue;
+    
+       slider4.oninput = function(){
+        output4.innerHTML =this.value;
+        
+    } 
+    
+    </script>
+	<script>
+    
+   var slider5 = document.getElementById("myRange5");
+    var output5 = document.getElementById("demo5");
+    output1.innerHTML = slider1.nodeValue;
+    
+       slider5.oninput = function(){
+        output5.innerHTML =this.value;
+        
+    } 
+    
+    </script>
+	
+	
+	
+<input type="submit" value="save">
+  <input type="submit" value="run">
+
+
+</head>
+</body>
+</html>
+
+
